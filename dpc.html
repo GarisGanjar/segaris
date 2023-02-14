@@ -57,7 +57,7 @@
           <li><a class="nav-link scrollto" href="about.html">Tentang GARIS</a></li>
 		  <li class="dropdown"><a href="team.html"><span>Dewan Pengurus</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="dpd.html">Dewan Pimpinan Daerah</a></li>
+              <li><a href="dpc.html">Dewan Pimpinan Daerah</a></li>
               <li><a href="#">Dewan Pimpinan Cabang</a></li>
             </ul>
           </li>
@@ -89,8 +89,8 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= DPD Section ======= -->
-    <section id="dpd">
+    <!-- ======= DPC Section ======= -->
+    <section id="dpc">
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12">
@@ -100,11 +100,13 @@
           </div>
         </div>
       </div>
-      <div class="container dpd-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="container dpc-container" data-aos="fade-up" data-aos-delay="200">
         <div class="row">
-
-          <div class="col-md-12 dpd-content">
-            <button class="accordion">DPC Blora</button>
+		<main id="main">
+          <div class="col-md-12 dpc-content">
+            <button class="accordion">DPD Jateng</button>
+			<div class="panel">
+				<button class="accordion">DPC Blora</button>
 			<div class="panel">
 				<img src="assets/img/dpc/blora.jpg" alt="" width="100%"></a>
 			</div>
@@ -168,7 +170,12 @@
 			<div class="panel">
 				<img src="assets/img/dpc/temanggung.jpg" alt="" width="100%"></a>
 			</div>
-
+			</div>
+          </div>
+		  
+		  <div class="col-md-12 dpc-content">
+            <button class="accordion">DPD Kepulauan Bangka Belitung</button>
+			<div class="panel">
 			<button class="accordion">DPC Belitung</button>
 			<div class="panel">
 				<img src="assets/img/dpc/belitung.jpg" alt="" width="100%"></a>
@@ -183,28 +190,30 @@
 			<div class="panel">
 				<img src="assets/img/dpc/pangkalpinang.jpg" alt="" width="100%"></a>
 			</div>
-
+			</div>
+			
+          </div>
+			
 			<script>
 			var acc = document.getElementsByClassName("accordion");
 			var i;
 
 			for (i = 0; i < acc.length; i++) {
 				acc[i].addEventListener("click", function() {
-					this.classList.toggle("oke");
+					this.classList.toggle("active");
 					var panel = this.nextElementSibling;
-					if (panel.style.maxHeight) {
-						panel.style.maxHeight = null;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
 					} else {
-						panel.style.maxHeight = panel.scrollHeight + "px";
-					} 
+						panel.style.display = "block";
+					}
 				});
 			}
 			</script>
-
-          </div>
+		  </main>
         </div>
       </div>
-    </section><!-- End DPD Section -->	
+    </section><!-- End DPC Section -->	
 	
   </main><!-- End #main -->
 
