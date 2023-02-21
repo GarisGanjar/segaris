@@ -535,6 +535,41 @@ section {
   margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #18d26e;
+}
+
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-me .content ul strong {
+  margin-right: 10px;
+}
+
+.about-me .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #18d26e;
+  line-height: 0;
+}
+
+.about-me .content p:last-child {
+  margin-bottom: 0;
+}
+
 /* Contribute Section
 --------------------------------*/
 #contribute {
@@ -687,6 +722,80 @@ section {
 #subscribe .subscribe-btn:hover {
   background: #03C4EB;
   border: 2px solid #03C4EB;
+}
+
+/* Services Section
+--------------------------------*/
+#services {
+  background: #fff;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#services .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  height: 200px;
+  position: relative;
+  background: #fafafa;
+}
+
+#services .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background: #2dc997;
+}
+
+#services .icon a {
+  display: inline-block;
+}
+
+#services .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+}
+
+#services .box:hover .icon {
+  background: #fff;
+  border: 2px solid #2dc997;
+}
+
+#services .box:hover .icon i {
+  color: #2dc997;
+}
+
+#services .box:hover .icon a {
+  color: #2dc997;
+}
+
+#services .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .description {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /* Portfolio Section
@@ -853,8 +962,8 @@ section {
 }
 
 #testimonials .profile .pic {
-  border-radius: 50%;
-  border: 6px solid #fff;
+  border-radius: 0 15px 0 15px;
+  border: 5px solid #fff;
   margin-bottom: 15px;
   overflow: hidden;
   height: 260px;
@@ -898,6 +1007,25 @@ section {
   right: -9px;
   position: relative;
   top: 4px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
 }
 
 /* Team Section
