@@ -889,7 +889,8 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 20px;
+  padding: 80px 0;
+  background: #f6f6f6;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -988,7 +989,7 @@ section {
   position: relative;
   background: #fff;
   padding: 60px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 16px;
   font-style: italic;
   border-radius: 5px;
@@ -1520,3 +1521,4 @@ section {
   border: 2px solid #fff;
   color: #fff;
 }
+
