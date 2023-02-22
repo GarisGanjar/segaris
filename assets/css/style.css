@@ -1522,3 +1522,48 @@ section {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+#video {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#video .video-img {
+  overflow: hidden;
+}
+
+#video .video-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #video .video-img {
+    height: auto;
+  }
+
+  #video .video-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#video .video-content {
+  background: #fff;
+}
+
+#video .video-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#video .video-text {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#video .video-text:last-child {
+  margin-bottom: 0;
+}
